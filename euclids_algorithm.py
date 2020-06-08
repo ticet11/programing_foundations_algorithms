@@ -8,13 +8,13 @@ def findGCD(int_1, int_2):
             int_1 = int_2
             int_2 = remainder
             remainder = int_1 % int_2
-        print(int_2)
+        return int_2
     else:
         remainder = int_2 % int_1
         while remainder != 0:
             int_2 = int_1
             int_1 = remainder
             remainder = int_2 % int_1
-        print(int_1)
+        return int_1
 
-findGCD(400, 500)
+print(findGCD(20, 8))
